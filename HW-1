@@ -63,10 +63,11 @@ To https://github.com/Masha246/JSON.git
 
 
  10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
-nekrashevich maria
-42 years
-no animals
-1000
+{ "name": "nekrashevich maria",
+"age": "42",
+"pets": "0",
+"salary": "1000"
+}
 
 
 
