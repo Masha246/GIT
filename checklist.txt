@@ -1,0 +1,7 @@
+ID
+Title
+ER
+AR 
+Status
+Attachment or bug link
+tester's name
