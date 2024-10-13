@@ -1,0 +1,149 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:  git branch SQL  git branch Postman
+git branch Jmeter
+git branch CheckLists
+ git branch BugReports
+git branch SQL
+git branch Charles
+git branch Mobile testing
+
+
+- Postman
+- Jmeter
+- CheckLists
+- Bag Reports
+- SQL
+- Charles
+- Mobile testing
+
+2. Запушить все ветки на внешний репозиторий
+$ git push --all
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Masha246/GIT.git
+ * [new branch]      BugReports -> BugReports
+ * [new branch]      Charles -> Charles
+ * [new branch]      CheckLists -> CheckLists
+ * [new branch]      Jmeter -> Jmeter
+ * [new branch]      MobileTesting -> MobileTesting
+ * [new branch]      Postman -> Postman
+ * [new branch]      SQL -> SQL
+
+
+
+
+3. В ветке Bag Reports сделать текстовый документ со структурой баг репорта
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework (BugReports)
+$ cat report.txt
+cat > report.txt
+ID 1
+Title There is no redirection to AppStore when tapping '***' link
+Envinronment Iphone 12? IOS 17.6
+Steps 1) launch the app
+2) Tap the '***' link
+ER There is    redirection to AppStore when tapping '***' link
+AR There is no redirection to AppStore when tapping '***' link
+Attachment 'link'
+Tester's name
+Comments
+
+
+
+
+
+
+4. Запушить структуру багрепорта на внешний репозиторий
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework (BugReports)
+$ git add report.txt
+warning: in the working copy of 'report.txt', LF will be replaced by CRLF the next time Git touches it
+
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework (BugReports)
+$ git commit -m "report"
+[BugReports 4581beb] report
+ 1 file changed, 13 insertions(+)
+
+$ git push --set-upstream origin BugReports
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 432 bytes | 432.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Masha246/GIT.git
+   768caf7..e442577  BugReports -> BugReports
+branch 'BugReports' set up to track 'origin/BugReports'.
+
+
+
+
+
+
+5. Вмержить ветку Bag Reports в Main
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework (main)
+$ git merge BugReports
+Updating 98e2a58..4581beb
+Fast-forward
+ report.txt | 24 ++++++++++++++++++++++++
+ 1 file changed, 24 insertions(+)
+ create mode 100644 report.txt
+
+
+
+6. Запушить main на внешний репозиторий
+.Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework/GIT (main)
+$ git push
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Masha246/GIT.git
+   768caf7..e442577  main -> main
+
+
+
+7. В ветке CheckLists набросать структуру чек листа.
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework/GIT (CheckLists)
+$ cat > checklist.txt
+ID
+Title
+ER
+AR
+Status
+Attachment or bug link
+tester's name
+
+
+
+
+8. Запушить структуру на внешний репозиторий
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework/GIT (CheckLists)
+$ git push --set-upstream origin CheckLists
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Masha246/GIT.git
+   768caf7..770d687  CheckLists -> CheckLists
+branch 'CheckLists' set up to track 'origin/CheckLists'.
+
+
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Compare and pull request
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework/GIT (CheckLists)
+$ git checkout main
+Switched to branch 'main'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+
+Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/GIT/gitrepo/Homework/GIT (main)
+$ git pull origin
+Updating e442577..8c3bbab
+Fast-forward
+ checklist.txt | 7 +++++++
+ 1 file changed, 7 insertions(+)
+ create mode 100644 checklist.txt
+
+
+
