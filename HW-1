@@ -87,18 +87,12 @@ touch preferences.json
 
  13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON. Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/JSON (main)
 $vim  preferences.json
-Мост
-мясо
-осень
-австралия
+
 
  14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
 Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/JSON (main)
 $ vim skills.json
-devtools
-git
-terminal
-теория
+
 
  15. Отправить сразу 2 файла на внешний репозиторий.
 Masha@DESKTOP-2D6J1KK MINGW64 /d/Terminal/F1/dz1/dir_1/inner_dir_1/ABC/JSON (main)
