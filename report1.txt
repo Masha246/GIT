@@ -1,0 +1,10 @@
+D 1
+Title There is no redirection to AppStore when tapping '***' link
+Envinronment Iphone 12? IOS 17.6
+Steps 1) launch the app
+2) Tap the '***' link
+ER There is    redirection to AppStore when tapping '***' link
+AR There is no redirection to AppStore when tapping '***' link
+Attachment 'link'
+Tester's name
+Comments
